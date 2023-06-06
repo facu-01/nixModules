@@ -37,6 +37,7 @@ in
     programs.fish = {
       enable = true;
       shellAliases = {
+        config = "code /home/facu/nixModules";
         update = "sudo nixos-rebuild switch";
       };
 
