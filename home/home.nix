@@ -35,7 +35,7 @@ in
       userEmail = "facundon.lucero@alumnos.frm.utn.edu.ar";
 
       extraConfig = {
-        pull.ff = "only";
+        pull.rebase = "true";
       };
 
     };
