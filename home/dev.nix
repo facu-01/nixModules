@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     postman
     docker-compose
+    docker-client
   ];
 
   virtualisation.docker.enable = true;
