@@ -5,6 +5,7 @@
     vscode
     postman
     docker-compose
+    docker-client
   ];
 
   virtualisation.docker.enable = true;
