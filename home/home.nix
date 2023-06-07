@@ -33,6 +33,11 @@ in
       enable = true;
       userName = "Facundo Lucero";
       userEmail = "facundon.lucero@alumnos.frm.utn.edu.ar";
+
+      extraConfig = {
+        pull.ff = "only";
+      };
+
     };
 
     programs.fish = {
