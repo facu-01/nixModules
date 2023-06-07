@@ -22,6 +22,7 @@ in
     (import "${home-manager}/nixos")
     ./gnome.nix
     ./dev.nix
+    ./vscode.nix
   ];
 
   # Home manager config
@@ -39,6 +40,8 @@ in
       shellAliases = {
         config = "code /home/facu/nixModules";
         update = "sudo nixos-rebuild switch";
+        update-boot = "sudo nixos-rebuild boot";
+        search = "google-chrome-stable https://search.nixos.org/packages";
       };
 
     };
@@ -52,6 +55,7 @@ in
     google-chrome
     lm_sensors
     sqlite
+    cpu-x
   ];
 
 }
