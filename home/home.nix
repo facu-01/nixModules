@@ -44,8 +44,8 @@ in
       enable = true;
       shellAliases = {
         config = "code /home/facu/nixModules";
-        update = "sudo nixos-rebuild switch";
-        update-boot = "sudo nixos-rebuild boot";
+        update = "sudo nixos-rebuild switch -v";
+        update-boot = "sudo nixos-rebuild boot -v";
         search = "google-chrome-stable https://search.nixos.org/packages";
       };
 
@@ -53,8 +53,6 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    rnix-lsp
-    nixpkgs-fmt
     spotify
     libreoffice
     google-chrome
